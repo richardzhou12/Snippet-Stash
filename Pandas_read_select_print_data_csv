@@ -1,4 +1,6 @@
-import os
+""" Notes from UDACITY Machine Learning for Trading class """
+# Class 01 - 01:03
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
