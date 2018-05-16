@@ -27,6 +27,10 @@ def get_data(symbols, dates):
             df = df.dropna(subset=["SPY"])
     return df
 
+def normalize_data(df):
+    # Normalize data by comparing all of the value to the first row
+    # So we will have a percentage of change value for each day (day one start at 1)
+    return df / df.ix[0,:]
 
 def plot_data(df, title="Stock prices"):
     # Plot stock prices with a custom title and meaningful axis labels.
